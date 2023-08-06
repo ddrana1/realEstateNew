@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us - Michelle Real Estate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        form label {
+            width: 150px;
+            margin-right: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+    
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+    
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+    
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div>
+                <label for="property-type">Property Type:</label>
+                <select id="property-type" name="property-type">
+                    <option value="house">House</option>
+                    <option value="condo">Condominium</option>
+                </select>
+            </div>
+    
+            <div>
+                <label for="bedrooms">No. of Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" required>
+            </div>
+    
+            <div>
+                <label for="bathrooms">No. of Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" required>
+            </div>
+    
+            <div>
+                <label for="price-range">Price Range:</label>
+                <input type="text" id="price-range" name="price-range" required>
+            </div>
+    
+            <div>
+                <label for="additional-comments">Additional Comments:</label>
+                <textarea id="additional-comments" name="additional-comments" rows="4"></textarea>
+            </div>
+    
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Michelle Makos Real Estate. All rights reserved.</p>
+    </footer>
+</body>
+</html>
