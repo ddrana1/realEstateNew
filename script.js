@@ -5,12 +5,23 @@ made available in this assessment for my use. I also declare that no part of thi
 */
 
 // script.js
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    // Your form submission logic here
-
-    // Display success alert
-    alert('Registered Successfully');
+document.addEventListener('DOMContentLoaded', function () {
+    
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        
+        const formData = new FormData(e.target);
+        for (const pair of formData.entries()) {
+            console.log(pair[0] + ': ' + pair[1]);
+        }
+        
+        
+        alert('Registered Successfully');
+        
+        
+        e.target.reset();
+    });
 });
+
 /*var submit = document.getElementById("submit");
 submit.addEventListener("click",calculateVolume, false);*/
